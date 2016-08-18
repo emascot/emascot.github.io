@@ -12,7 +12,7 @@ email_username: emasco2@uic.edu
 # facebook_username:
 
 # Google Analytics
-# google_tracking_id:
+google_tracking_id: UA-82758576-1
 
 # Build settings
 markdown: kramdown

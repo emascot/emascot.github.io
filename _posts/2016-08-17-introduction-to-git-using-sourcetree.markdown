@@ -3,7 +3,7 @@ layout:     post
 title:      "Introduction to Git using SourceTree"
 subtitle:   "An important tool in a developer's toolkit"
 author:     "Eric Mascot"
-header-img: "img/2016-08-17-introduction-to-git-using-sourcetree/header.png"
+image:      "img/2016-08-17-introduction-to-git-using-sourcetree/header.png"
 category: tutorial
 tags:
   - git

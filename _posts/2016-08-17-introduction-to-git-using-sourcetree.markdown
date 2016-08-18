@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Introduction to Git using SourceTree"
-subtitle:   "The most important tool in a developer's toolkit"
+subtitle:   "An important tool in a developer's toolkit"
 author:     "Eric Mascot"
 header-img: "img/2016-08-17-introduction-to-git-using-sourcetree/header.png"
 category: tutorial
@@ -196,7 +196,7 @@ git checkout v1.0
 
 ## Branch
 
-This is where I think the real magic of Git is. Let's say we need to diverge into two directions. We do that by branching. We can later combine branches by merging. There are many strategies for branching. The one I recommend is the [Git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/) I mentioned before, but since it's so fast and so easy to branch, you can use it any way you want.
+This is where I think the real magic of Git is. Let's say we need to diverge into two directions. We do that by branching. We can later combine branches by merging. There are many strategies for branching. The one I recommend is the [Git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/) I mentioned before, but since it's so fast and so easy to branch, you can branch however you'd like.
 
 Create a new branch by clicking "Branch" in the top menu
 
@@ -240,7 +240,7 @@ Once you're done, save and commit
 
 ![Commit merge conflict]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/18.png)
 
-This is where a lot of people who are new to Git have the most trouble. It is tedious but you have to go through each line and figure out how to correctly merge. It is easy to mess up a merge and create bugs. That is why I recommend editing the file directly since you're less prone to improper merging.
+This is where a lot of people who are new to Git have the most trouble. It is tedious but you have to go through each line and figure out how to correctly merge. It is easy to mess up a merge and create bugs. That is why I recommend editing the file directly since you're less prone to lazy merging.
 
 ## Conclusion
 

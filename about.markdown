@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About
-permalink: about
+title: "About"
+description: "A little bit about Eric Mascot"
+header-img: "img/about-bg.jpg"
 ---
 
 I'm Eric Mascot, a PhD student at the University of Illinois at Chicago. I study physics and in particular, computational condensed matter theory. I use a lot of Fortran and Python with MPI on high performance clusters to calculate things like the energy dispersion, density of states, and quasi-particle interference patterns for a given theoretical description of a material.

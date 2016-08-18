@@ -1,6 +1,8 @@
 ---
-layout: post
-title: Introduction to Git using SourceTree
+layout:     post
+title:      "Introduction to Git using SourceTree"
+author:     "Eric Mascot"
+header-img: "img/post-bg-01.jpg"
 category: tutorial
 tags:
   - git

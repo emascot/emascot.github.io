@@ -1,9 +1,24 @@
+# Site settings
 title: Eric Mascot
+header-img: img/home-bg.jpg
 email: emasco2@uic.edu
-description: >
-  Tutorials and stuff from a physics grad
+copyright_name: Eric Mascot
+description: "Tutorials and stuff from a physics grad"
 baseurl: ""
 url: "http://emascot.github.io"
 github_username: emascot
+email_username: emasco2@uic.edu
+# twitter_username:
+# facebook_username:
 
+# Google Analytics
+# google_tracking_id:
+
+# Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]

@@ -9,7 +9,7 @@ tags:
   - vcs
 ---
 
-For my first blog post, I want to introduce people to something so important, I can't believe that not everyone knows about it. Anyone who writes code - which is pretty much everyone nowadays - should know what Git is. I can't emphasize enough how useful it is, and that is why I chose it as my first topic.
+For my first blog post, I want to introduce you to one of the most important tools for development. Anyone who writes code - which is pretty much everyone nowadays - should know how to use Git. I can't emphasize enough how useful it is, and that is why I chose it as my first topic.
 
 Git is a way to do version control, i.e. go back and forth between versions of a project. Back in 2012, people used many different version control systems. I tried Subversion and Mercurial but pretty much everyone is in the Git boat now. There's a bunch of reasons why Git won out. For me, it made working in a team much better. Git is great at handling large projects but what I want to show is that Git helps for even the smallest individual projects.
 
@@ -17,7 +17,7 @@ It helps that everyone has a general knowledge about Git, but I recommend that f
 
 ## The Main Idea
 
-On the Git documentation, it says that Git thinks about its data like a stream of snapshots. So let's say you have a project and you want to make a change but you also want a backup, so you copy the folder and name it "backup". Each copy is like a snapshot in Git! But most of the files are the same, so Git doesn't duplicate everything. Instead, it makes a link to the unchanged file. Git then hashes the contents into something like
+On the [Git documentation](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics), it says that Git thinks about its data like a stream of snapshots. So let's say you have a project and you want to make a change but you also want a backup, so you copy the folder and name it "backup". Each copy is like a snapshot in Git! But most of the files are the same, so Git doesn't duplicate everything. Instead, it makes a link to the unchanged file. Git then hashes the contents into something like
 
 880861822d12b61df5ad72ed2117886c679384c8
 
@@ -25,26 +25,28 @@ That is the name of the snapshot and it also works like added security since any
 
 So I mentioned that Git keeps a bunch of copies and only stores differences. This leads to two very important caveats about Git:
 
-Git is additive. You are not supposed to be able to remove a particular snapshot (you can but you're not supposed to). This means you should not have any secrets in the project (like passwords or keys). I've found passwords to databases and servers because people left it in the Git history. Do not add secrets to Git.
-Git differences are line by line. If you change one line, Git only saves that one line of change. But this makes it difficult to track changes in binary files, e.g. .jpg, .mp3, .pdf. If you make a small change to an image or pdf, it changes the whole file. Git has trouble tracking these changes so avoid adding these kinds of files to Git.
-So what do I mean by adding to git? It's time to learn som Git terminology. Snapshots are known as commits. To prepare a commit, we add it to the staging area or the index. Once we are all ready, we commit it to the repository. So we can imagine our project in 3 sections.
+1. Git is additive. You are not supposed to be able to remove a particular snapshot (you can but you're not supposed to). This means you should not have any secrets in the project (like passwords or keys). I've found passwords to databases and servers because people left it in the Git history. Do not add secrets to Git.
+2. Git differences are line by line. If you change one line, Git only saves that one line of change. But this makes it difficult to track changes in binary files, e.g. .jpg, .mp3, .pdf. If you make a small change to an image or pdf, it changes the whole file. Git has trouble tracking these changes so avoid adding these kinds of files to Git.
 
-Local - where we make changes
-Staging area/Index - where we add changes ready to commit
-Repository - where commits are stored
+So what do I mean by adding to git? It's time to learn some Git terminology. Snapshots are known as commits. To prepare a commit, we add it to the staging area or the index. Once we are all ready, we commit it to the repository. So we can imagine our project in 3 sections.
+
+* Local - where we make changes
+* Staging area/Index - where we add changes ready to commit
+* Repository - where commits are stored
+
 So let's get started!
 
 ## Install
 
-I wish I could just teach just command line Git but then pretty much 90% of people would quit right here. So instead I will teach how to use my recommended software for Git and append the command line version for each step. The problem about Git software is that each software has a particular workflow. I recommend SourceTree because it works for both Windows and Mac and uses "Git-flow".
+I wish I could just teach just command line Git but then pretty much 90% of people would quit right here. So instead I will teach how to use my recommended software for Git and append the command line version for each step. The problem about Git software is that each software has a particular workflow. I recommend SourceTree because it works for both Windows and Mac and uses "[Git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow)".
 
-Download Source Tree Here
+[Download Source Tree Here](https://www.sourcetreeapp.com/)
 
 The current official instructions to install Git are listed below.
 
 * Windows
 
-http://git-scm.com/download/win
+[http://git-scm.com/download/win](http://git-scm.com/download/win)
 
 * Mac
 
@@ -99,7 +101,7 @@ Let's create a .gitignore
 *.out
 *.dSYM
 {% endhighlight %}
-Now those files don't appear in the unstaged files! Check this collection of templates for .gitignore files.
+Now those files don't appear in the unstaged files! Check this [collection of templates](https://github.com/github/gitignore) for .gitignore files.
 
 ## Add and Commit
 
@@ -157,7 +159,7 @@ To go back
 
 ## Stash
 
-Now lets say we've made some changes but want to temporarily hide those changes. We can stash the changes and "pop" the stash when we want those changes back. I like this feature to do quick benchmarking, i.e. compare two versions quickly. Stashing will become even more important when we learn merging.
+Now let's say we've made some changes but want to temporarily hide those changes. We can stash the changes and "pop" the stash when we want those changes back. I like this feature to do quick benchmarking, i.e. compare two versions quickly. Stashing will become even more important when we learn merging.
 
 Stash changes by clicking the Stash icon in the middle of the top menu bar
 
@@ -174,7 +176,7 @@ git stash pop
 
 ## Tag
 
-Git has a feature to tag a commit. This is a good way to give a name to an important commit such as "v1.0". That way, when you share results and they ask a question about those results, you can quickly return to the state of the code to when those results were produced.
+Git has a feature to tag a commit. This is a good way to give a name to an important commit such as "v1.0". That way, when you share results and get asked a question about those results, you can quickly return to the state of the code to when those results were produced.
 
 Right click commit to tag
 
@@ -191,7 +193,7 @@ git checkout v1.0
 
 ## Branch
 
-This is where I think the real magic of Git is. Let's say we need to diverge into two directions. We do that by branching. We can later combine branches by merging. There are many strategies for branching. The one I recommend is the Git-flow I mentioned before, but since it's so fast and so easy to branch, you can use it any way you want.
+This is where I think the real magic of Git is. Let's say we need to diverge into two directions. We do that by branching. We can later combine branches by merging. There are many strategies for branching. The one I recommend is the [Git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/) I mentioned before, but since it's so fast and so easy to branch, you can use it any way you want.
 
 Create a new branch by clicking "Branch" in the top menu
 
@@ -209,9 +211,8 @@ git checkout master
 
 ## Merge
 
-You make some commits in the new branch and you're ready to merge them into the master branch.
-
-Click "Merge" in the top menu and select the commit to merge
+When you make some commits on the new branch and you're ready to merge them into the master branch,
+switch to the master branch and click "Merge" in the top menu and select the commit to merge
 
 ![Merge](/assets/2016-08-17-introduction-to-git-using-sourcetree/15.png)
 
@@ -240,4 +241,4 @@ This is where a lot of people who are new to Git have the most trouble. It is te
 
 ## Conclusion
 
-These are the basic tools needed for Git. I only included local version control in this post and it is already pretty long. There are many more features but I recommend mastering these tools first before learning the next set of features. I have been using Git for almost 4 years now and I still haven't mastered Git. In a future post, I will go over collaborating using Git. That will go over the 3 other buttons in the top menu, pull, push, and fetch and more. If you want to learn more, check out github and the git documentation.
+These are the basic tools needed for Git. I only included local version control in this post and it is already pretty long. There are many more features but I recommend mastering these tools first before learning the next set of features. I have been using Git for almost 4 years now and I still haven't mastered Git. In a future post, I will go over collaborating using Git. That will go over the 3 other buttons in the top menu, pull, push, and fetch and more. If you want to learn more, check out [github](https://github.com/) and the [git documentation](git documentation).

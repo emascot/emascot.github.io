@@ -471,3 +471,19 @@ img::-moz-selection {
 body {
 	webkit-tap-highlight-color: $brand-primary;
 }
+
+// 404 page
+.error-page {
+	padding: 40px 15px;
+	text-align: center;
+}
+.error-actions {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.error-actions .btn {
+	margin-right:10px;
+}
+h1.error404 {
+	font-size :100px !important;
+}

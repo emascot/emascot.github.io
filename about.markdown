@@ -2,7 +2,7 @@
 layout: page
 title: "About"
 description: "A little bit about Eric Mascot"
-header-img: "img/about-bg.jpg"
+image: "img/about-bg.jpg"
 ---
 
 I'm Eric Mascot, a PhD student at the University of Illinois at Chicago.
@@ -16,5 +16,5 @@ I started as a translator in 2012, moved on to planner, then was transferred to 
 I always had an interest in coding and games since middle school where I learned ActionScript to make flash games.
 I made my first solar system simulation in flash without learning the equations for gravity.
 When I finally did learn about gravity in school, I got really interested in physics.
-I also always loved the cutting edge in technology, having my own computer since I was 5 years old.
+I also always loved the cutting edge in technology, growing up with my own PC since I was 5 years old.
 Being able to apply cutting edge technology to research is what keeps me motivated to study physics.

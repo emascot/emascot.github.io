@@ -1,8 +1,9 @@
 ---
 layout:     post
 title:      "Introduction to Git using SourceTree"
+subtitle:   "The most important tool in a developer's toolkit"
 author:     "Eric Mascot"
-header-img: "img/post-bg-01.jpg"
+header-img: "img/2016-08-17-introduction-to-git-using-sourcetree/header.png"
 category: tutorial
 tags:
   - git
@@ -76,15 +77,15 @@ git config --list
 
 Let's turn a project into a Git repo. First, create a local repository
 
-![Add new repository](/assets/2016-08-17-introduction-to-git-using-sourcetree/1.png)
+![Add new repository]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/1.png)
 
 and select the folder
 
-![Select repo folder](/assets/2016-08-17-introduction-to-git-using-sourcetree/2.png)
+![Select repo folder]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/2.png)
 
 and now you have an empty repository
 
-![Empty repo](/assets/2016-08-17-introduction-to-git-using-sourcetree/3.png)
+![Empty repo]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/3.png)
 
 {% highlight sh %}
 cd /Users/ericmascot/Documents/Research/DOS
@@ -108,7 +109,7 @@ Now those files don't appear in the unstaged files! Check this [collection of te
 ## Add and Commit
 
 Let's add all the other files to the index and commit.
-![Add and commit](/assets/2016-08-17-introduction-to-git-using-sourcetree/4.png)
+![Add and commit]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/4.png)
 We just created the first snapshot of our project
 
 {% highlight sh %}
@@ -120,7 +121,7 @@ git commit -m "Initial commit"
 
 Now we can take a look at the "stream of snapshots" in "History"
 
-![History](/assets/2016-08-17-introduction-to-git-using-sourcetree/5.png)
+![History]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/5.png)
 
 {% highlight sh %}git log -p{% endhighlight %}
 
@@ -128,7 +129,7 @@ Now we can take a look at the "stream of snapshots" in "History"
 
 In "File status" we can see which files were modified, and see the changes in each file. What is nice is we can choose individual lines to commit from this view by clicking "Stage hunk" in the top right
 
-![Status and diff](/assets/2016-08-17-introduction-to-git-using-sourcetree/6.png)
+![Status and diff]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/6.png)
 
 {% highlight sh %}
 git status
@@ -139,7 +140,7 @@ git diff
 
 When you modify a file but decide you want to go back to the last commit you can just right-click and reset
 
-![Reset](/assets/2016-08-17-introduction-to-git-using-sourcetree/7.png)
+![Reset]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/7.png)
 
 {% highlight sh %}git checkout -- dosqpi.f90{% endhighlight %}
 Note: You are permanently deleting these changes by doing this
@@ -148,7 +149,7 @@ Note: You are permanently deleting these changes by doing this
 
 So if we continue on in this fashion and have a few more commits, how can I go back in time to another commit? Just double-click the commit and it will checkout to that commit!
 
-![Checkout](/assets/2016-08-17-introduction-to-git-using-sourcetree/8.png)
+![Checkout]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/8.png)
 
 For command line, you don't have to type the whole hash. The first 6 characters are usually enough.
 
@@ -165,11 +166,11 @@ Now let's say we've made some changes but want to temporarily hide those changes
 
 Stash changes by clicking the Stash icon in the middle of the top menu bar
 
-![Stash](/assets/2016-08-17-introduction-to-git-using-sourcetree/9.png)
+![Stash]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/9.png)
 
 Pop stash by clicking on the stash in the left sidebar
 
-![Stash pop](/assets/2016-08-17-introduction-to-git-using-sourcetree/10.png)
+![Stash pop]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/10.png)
 
 {% highlight sh %}
 git stash
@@ -182,11 +183,11 @@ Git has a feature to tag a commit. This is a good way to give a name to an impor
 
 Right click commit to tag
 
-![Add tag](/assets/2016-08-17-introduction-to-git-using-sourcetree/11.png)
+![Add tag]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/11.png)
 
 Jump to tag by clicking the top right menu
 
-![Jump to tag](/assets/2016-08-17-introduction-to-git-using-sourcetree/12.png)
+![Jump to tag]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/12.png)
 
 {% highlight sh %}
 git tag -a v1.0 3953ede
@@ -199,11 +200,11 @@ This is where I think the real magic of Git is. Let's say we need to diverge int
 
 Create a new branch by clicking "Branch" in the top menu
 
-![Create branch](/assets/2016-08-17-introduction-to-git-using-sourcetree/13.png)
+![Create branch]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/13.png)
 
 You can switch branches by double clicking the branch in the left sidebar
 
-![Switch branch](/assets/2016-08-17-introduction-to-git-using-sourcetree/14.png)
+![Switch branch]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/14.png)
 
 {% highlight sh %}
 git branch dev
@@ -216,7 +217,7 @@ git checkout master
 When you make some commits on the new branch and you're ready to merge them into the master branch,
 switch to the master branch and click "Merge" in the top menu and select the commit to merge
 
-![Merge](/assets/2016-08-17-introduction-to-git-using-sourcetree/15.png)
+![Merge]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/15.png)
 
 {% highlight sh %}
 git checkout master
@@ -229,15 +230,15 @@ Sometimes, merging doesn't go too well. There are changes in both branches and G
 
 Right click the file with conflicts and launch merge tool
 
-![Launch merge tool](/assets/2016-08-17-introduction-to-git-using-sourcetree/16.png)
+![Launch merge tool]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/16.png)
 
 Here you can choose to use the left version, right version, both, or neither
 
-![Resolve conflict](/assets/2016-08-17-introduction-to-git-using-sourcetree/17.png)
+![Resolve conflict]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/17.png)
 
 Once you're done, save and commit
 
-![Commit merge conflict](/assets/2016-08-17-introduction-to-git-using-sourcetree/18.png)
+![Commit merge conflict]({{ site.baseurl }}/img/2016-08-17-introduction-to-git-using-sourcetree/18.png)
 
 This is where a lot of people who are new to Git have the most trouble. It is tedious but you have to go through each line and figure out how to correctly merge. It is easy to mess up a merge and create bugs. That is why I recommend editing the file directly since you're less prone to improper merging.
 

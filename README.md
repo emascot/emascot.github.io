@@ -1,6 +1,6 @@
 # emascot.github.io
 
-Tutorials and stuff from a physics grad
+Tutorials and stuff from a physics grad student
 
 # Clean Blog by Start Bootstrap - Jekyll Version
 
@@ -19,6 +19,5 @@ jekyll s[erve]
 
 The following directories and their contents are Copyright Eric Mascot. You may not reuse anything therein without my permission:
 
-* _drafts/
 * _posts/
 * img/

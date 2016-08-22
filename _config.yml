@@ -1,9 +1,9 @@
 # SEO site settings
 title: "Eric Mascot"
 description: "Tutorials and stuff from a physics grad student"
-url: "http://emascot.github.io"
+url: "http://www.ericmascot.com"
 author: "Eric Mascot"
-# logo: "img/logo.jpg"
+logo: "img/logo.png"
 
 # Site settings
 baseurl: ""
@@ -23,10 +23,15 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude:
+  - "assets/**/*"
   - "node_modules"
   - "Gruntfile.js"
   - "package.json"
   - "README.md"
+  - "CNAME"
+  - "*.sublime-*"
+  - "Gemfile"
+  - "Gemfile.lock"
 
 gems:
   - "jekyll-paginate"

@@ -5,27 +5,54 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             main: {
-                src: 'js/<%= pkg.name %>.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                expand: true,
+                cwd: 'assets/js',
+                src: '**/*.js',
+                dest: 'js',
+                ext: '.min.js'
+            }
+        },
+        cssmin: {
+            main: {
+                files: [{
+                    expand: true,
+                    cwd: 'assets/css',
+                    src: ['*.css'],
+                    dest: 'css',
+                    ext: '.min.css'
+                }]
             }
         },
         less: {
             expanded: {
                 options: {
-                    paths: ["css"]
+                    paths: ["assets/less"]
                 },
                 files: {
-                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
+                    "css/clean-blog.css": "assets/less/clean-blog.less"
                 }
             },
             minified: {
                 options: {
-                    paths: ["css"],
+                    paths: ["assets/less"],
                     cleancss: true
                 },
                 files: {
-                    "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                    "css/clean-blog.min.css": "assets/less/clean-blog.less"
                 }
+            }
+        },
+        imagemin: {
+            main: {
+                options: {
+                    optimizationLevel: 3
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'assets/img/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'img/'
+                }]
             }
         },
         banner: '/*!\n' +
@@ -34,41 +61,63 @@ module.exports = function(grunt) {
             ' * Licensed under <%= pkg.license %> (https://spdx.org/licenses/<%= pkg.license %>)\n' +
             ' */\n',
         usebanner: {
-            dist: {
+            main: {
                 options: {
                     position: 'top',
-                    banner: '<%= banner %>'
+                    banner: '<%= banner %>',
+                    linebreak: true
                 },
                 files: {
-                    src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
+                    src: ['css/*.css', 'js/*.js']
                 }
             }
         },
         watch: {
             scripts: {
-                files: ['js/<%= pkg.name %>.js'],
-                tasks: ['uglify'],
+                cwd: 'assets/js/',
+                files: ['**/*.js'],
+                tasks: ['newer:uglify'],
                 options: {
-                    spawn: false,
-                },
-            },
-            less: {
-                files: ['less/*.less'],
-                tasks: ['less'],
-                options: {
-                    spawn: false,
+                    spawn: false
                 }
             },
-        },
+            styles: {
+                cwd: 'assets/css/',
+                files: ['**/*.css'],
+                tasks: ['newer:cssmin'],
+                options: {
+                    spawn: false
+                }
+            },
+            less: {
+                cwd: 'assets/less/',
+                files: ['**/*.less'],
+                tasks: ['less'],
+                opetions: {
+                    spawn: false
+                }
+            },
+            images: {
+                cwd: 'assets/img/',
+                files: ['**/*.{png,jpg,gif}'],
+                tasks: ['newer:imagemin'],
+                options: {
+                    spawn: false
+                }
+            }
+        }
     });
 
     // Load the plugins.
+    grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
+    grunt.registerTask('default', ['newer:uglify', 'newer:less', 'newer:cssmin', 'newer:imagemin', 'newer:usebanner']);
 
 };

@@ -1,20 +1,23 @@
 {
-    "folders":
-    [
-        {
-            "follow_symlinks": true,
-            "path": "/Users/ericmascot/Documents/emascot.github.io/",
-            "folder_exclude_patterns": [".sass-cache", "_site"]
-        }
-    ],
-
-    "settings":
-    {
-        "Jekyll":
-        {
-            "jekyll_posts_path": "/Users/ericmascot/Documents/emascot.github.io/_posts",
-            "jekyll_drafts_path": "/Users/ericmascot/Documents/emascot.github.io/_drafts",
-            "jekyll_uploads_path": "/Users/ericmascot/Documents/emascot.github.io/assets"
-        }
-    }
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				".sass-cache",
+				"_site",
+				"node_modules"
+			],
+			"path": "/Users/ericmascot/Documents/emascot.github.io"
+		}
+	],
+	"settings":
+	{
+		"Jekyll":
+		{
+			"jekyll_drafts_path": "/Users/ericmascot/Documents/emascot.github.io/_drafts",
+			"jekyll_posts_path": "/Users/ericmascot/Documents/emascot.github.io/_posts",
+			"jekyll_uploads_path": "/Users/ericmascot/Documents/emascot.github.io/assets"
+		}
+	}
 }

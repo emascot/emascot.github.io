@@ -104,6 +104,7 @@ Let's create a .gitignore
 *.out
 *.dSYM
 {% endhighlight %}
+
 Now those files don't appear in the unstaged files! Check this [collection of templates](https://github.com/github/gitignore) for .gitignore files.
 
 ## Add and Commit

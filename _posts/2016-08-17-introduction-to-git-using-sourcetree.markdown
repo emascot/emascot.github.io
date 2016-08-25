@@ -41,7 +41,7 @@ So let's get started!
 
 ## Install
 
-I wish I could just teach just command line Git but then pretty much 90% of people would quit right here. So instead I will teach how to use my recommended software for Git and append the command line version for each step. The problem about Git software is that each software has a particular workflow. I recommend SourceTree because it works for both Windows and Mac and uses "[Git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow)".
+I wish I could just teach command line Git but then pretty much 90% of people would quit right here. So instead I will teach how to use my recommended software for Git and append the command line version for each step. The problem about Git software is that each software has a particular workflow. I recommend SourceTree because it works for both Windows and Mac and uses "[Git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow)".
 
 [Download Source Tree Here](https://www.sourcetreeapp.com/)
 

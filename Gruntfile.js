@@ -59,6 +59,9 @@ module.exports = function(grunt) {
             ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license %> (https://spdx.org/licenses/<%= pkg.license %>)\n' +
+            ' * Clean Blog v1.0.0 (http://startbootstrap.com)\n' +
+            ' * Copyright 2015 Start Bootstrap\n' +
+            ' * Licensed under MIT (https://spdx.org/licenses/MIT)\n' +
             ' */\n',
         usebanner: {
             main: {

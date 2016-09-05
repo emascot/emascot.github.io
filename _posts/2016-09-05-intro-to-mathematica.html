@@ -1,0 +1,526 @@
+---
+layout:     post
+author:     "Eric Mascot"
+title:      "Introduction to Mathematica"
+subtitle:   
+category:   Tutorial
+tags:
+  - 
+---
+
+<p>
+ Next in super useful tools for physicists is <span style='font-style: italic;'>Mathematica</span>. If you're a physicist, I'm sure you've fiddled around a bit with <span style='font-style: italic;'>Mathematica</span>. I'll do a little intro and show how I usually utilize <span style='font-style: italic;'>Mathematica</span>.
+</p>
+
+
+
+<h2>
+ Intro
+</h2>
+
+
+
+<p>
+ First things first, let's do some arithmetic. You can type the same way you would a normal calculator and hit shift+enter.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_1.png" alt="intro-to-mathematica_1.png" width="235" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_2.png" alt="intro-to-mathematica_2.png" width="22" height="32" style="vertical-align:middle" />
+</p>
+
+<p>
+ Mathematica is cool and allows you to type the way you would write on paper.<br />We don't need the * to multiply because it can be inferred.<br />You can type the symbol pi by hitting esc, p, esc.<br />The escape key lets you type in symbols which you can find <span><a href="https://reference.wolfram.com/language/guide/SpecialCharacters.html"><span class="HyperlinkInline">here</span></a></span>.<br />You can also write exponents, square roots, and fractions using ctrl.<br />ctrl + 6 will type exponents <span><span><img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_3.png" alt="intro-to-mathematica_3.png" width="15" height="17" style="vertical-align:middle" /></span></span><br />ctrl + 2 will do a square root <span><span><img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_4.png" alt="intro-to-mathematica_4.png" width="24" height="20" style="vertical-align:middle" /></span></span><br />ctrl + /will make a fraction <span><span><img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_5.png" alt="intro-to-mathematica_5.png" width="12" height="38" style="vertical-align:middle" /></span></span><br />Rewriting the first calculation
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_6.png" alt="intro-to-mathematica_6.png" width="178" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_7.png" alt="intro-to-mathematica_7.png" width="22" height="32" style="vertical-align:middle" />
+</p>
+
+<p>
+ Much more pretty.
+</p>
+
+
+
+<h2>
+ Variables and Functions
+</h2>
+
+
+
+<p>
+ You can use variables to do symbolic calculations. You can also assign values to variables.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_8.png" alt="intro-to-mathematica_8.png" width="294" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_9.png" alt="intro-to-mathematica_9.png" width="69" height="13" style="vertical-align:middle" />
+</p>
+
+<p>
+ Here, I use // as an after thought to apply the function Simplify
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_10.gif" alt="intro-to-mathematica_10.gif" width="47" height="31" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_11.png" alt="intro-to-mathematica_11.png" width="8" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_12.png" alt="intro-to-mathematica_12.png" width="17" height="13" style="vertical-align:middle" />
+</p>
+
+<p>
+ You'll notice that assigned variables are black and unassigned variables are blue.<br />You can also assign variables as an after thought.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_13.png" alt="intro-to-mathematica_13.png" width="104" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_14.png" alt="intro-to-mathematica_14.png" width="17" height="13" style="vertical-align:middle" />
+</p>
+
+<p>
+ You may have noticed that I use the cosine function with square brackets. Square brackets are used for function parameters so avoid square brackets unless it is for functions.<br />We can define our own function with this notation.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_15.png" alt="intro-to-mathematica_15.png" width="330" height="13" style="vertical-align:middle" />
+</p>
+
+<p>
+ := is notation for delayed definition (evaluate each time the function is called).<br />We can now use the function.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_16.png" alt="intro-to-mathematica_16.png" width="115" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_17.png" alt="intro-to-mathematica_17.png" width="22" height="32" style="vertical-align:middle" />
+</p>
+
+<h2>
+ Visualization
+</h2>
+
+
+
+<p>
+ Let's try to visualize the function we just defined. There are many different ways to plot.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_18.gif" alt="intro-to-mathematica_18.gif" width="393" height="48" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_19.gif" alt="intro-to-mathematica_19.gif" width="360" height="223" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_20.gif" alt="intro-to-mathematica_20.gif" width="360" height="286" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_21.gif" alt="intro-to-mathematica_21.gif" width="360" height="361" style="vertical-align:middle;" usemap="#map_21" />
+<map name="map_21">
+<area shape="rect" coords="145,214,227,132" title="-4" nohref="" />
+<area shape="rect" coords="114,245,259,100" title="-3" nohref="" />
+<area shape="rect" coords="88,271,286,73" title="-2" nohref="" />
+<area shape="rect" coords="56,303,316,43" title="-1" nohref="" />
+<area shape="rect" coords="18,341,354,5" title="0" nohref="" />
+<area shape="rect" coords="18,341,355,4" title="2" nohref="" />
+<area shape="rect" coords="18,341,354,5" title="3" nohref="" />
+</map>
+</p>
+
+<p>
+ You can find more ways to visualize <span><a href="https://reference.wolfram.com/language/guide/FunctionVisualization.html"><span class="HyperlinkInline">here.</span></a></span> You can also add options to make the plot look how you want.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_22.png" alt="intro-to-mathematica_22.png" width="359" height="116" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_23.gif" alt="intro-to-mathematica_23.gif" width="576" height="584" style="vertical-align:middle" />
+</p>
+
+<p>
+ You can find these options by going to the documentation. Do this by pressing F1 with the cursor on the function.
+</p>
+
+
+
+<h2>
+ Manipulation
+</h2>
+
+
+
+<p>
+ Here is the fun part of <span style='font-style: italic;'>Mathematica</span>. It is super easy to make interactive plots.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_24.gif" alt="intro-to-mathematica_24.gif" width="451" height="116" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+<img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_69.png" alt="intro-to-mathematica_69.png" width="434" height="327" style="vertical-align:middle" />
+ <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.embed('{{ site.baseurl }}/assets/intro-to-mathematica_25.cdf', 464, 336);
+</script>
+</p>
+
+<p>
+ That is basically it. My main use of <span style='font-style: italic;'>Mathematica</span> is to visualize functions. If you want to learn more, you can move on but as long as you can plot functions, that's all you really need.
+</p>
+
+
+
+<h2>
+ Lists
+</h2>
+
+
+
+<p>
+ Another common need is lists which will also be used for arrays, vectors, matrices, network graphs, etc.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_26.gif" alt="intro-to-mathematica_26.gif" width="364" height="65" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_27.png" alt="intro-to-mathematica_27.png" width="221" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_28.png" alt="intro-to-mathematica_28.png" width="221" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_29.png" alt="intro-to-mathematica_29.png" width="415" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_30.png" alt="intro-to-mathematica_30.png" width="88" height="66" style="vertical-align:middle" />
+</p>
+
+<p>
+ Access elements in a table with double square brackets
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_31.gif" alt="intro-to-mathematica_31.gif" width="127" height="31" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_32.png" alt="intro-to-mathematica_32.png" width="8" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_33.png" alt="intro-to-mathematica_33.png" width="8" height="13" style="vertical-align:middle" />
+</p>
+
+<p>
+ If you have multiple cores, you can construct tables in parallel
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_34.gif" alt="intro-to-mathematica_34.gif" width="562" height="31" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_35.png" alt="intro-to-mathematica_35.png" width="273" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_36.png" alt="intro-to-mathematica_36.png" width="273" height="13" style="vertical-align:middle" />
+</p>
+
+<h2>
+ Map and Apply
+</h2>
+
+
+
+<p>
+ List operations are made easier with map and apply. Map does element wise operation whereas apply does a collective operation.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_37.gif" alt="intro-to-mathematica_37.gif" width="239" height="65" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_38.png" alt="intro-to-mathematica_38.png" width="243" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_39.png" alt="intro-to-mathematica_39.png" width="243" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_40.png" alt="intro-to-mathematica_40.png" width="74" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_41.png" alt="intro-to-mathematica_41.png" width="74" height="13" style="vertical-align:middle" />
+</p>
+
+<p>
+ Map and apply are so ubiquitous, it has its own notation.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_42.gif" alt="intro-to-mathematica_42.gif" width="186" height="65" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_43.png" alt="intro-to-mathematica_43.png" width="243" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_44.png" alt="intro-to-mathematica_44.png" width="243" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_45.png" alt="intro-to-mathematica_45.png" width="74" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_46.png" alt="intro-to-mathematica_46.png" width="74" height="13" style="vertical-align:middle" />
+</p>
+
+<h2>
+ Vectors and Matrices
+</h2>
+
+
+
+<p>
+ A 2D vector is just a 2 element list. Here, I make a list of coordinates.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_47.png" alt="intro-to-mathematica_47.png" width="405" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_48.png" alt="intro-to-mathematica_48.png" width="708" height="150" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_49.png" alt="intro-to-mathematica_49.png" width="101" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_50.gif" alt="intro-to-mathematica_50.gif" width="360" height="230" style="vertical-align:middle" />
+</p>
+
+<p>
+ I can now do a matrix operation on each coordinate
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_51.gif" alt="intro-to-mathematica_51.gif" width="264" height="31" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_52.gif" alt="intro-to-mathematica_52.gif" width="360" height="234" style="vertical-align:middle" />
+</p>
+
+<p>
+ To review, I defined a function that takes a point. The function rotates the point 45 degrees around the origin. I then map it onto my list of points.
+</p>
+
+
+
+<h2>
+ Pure functions
+</h2>
+
+
+
+<p>
+ I can do the previous operation in one line with a pure function.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_53.png" alt="intro-to-mathematica_53.png" width="305" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_54.gif" alt="intro-to-mathematica_54.gif" width="360" height="234" style="vertical-align:middle" />
+</p>
+
+<p>
+ This is getting a little abstract and I personally don't like all this complicated syntax but you may encounter this in other people's <span style='font-style: italic;'>Mathematica</span> notebooks. Using # and &amp; is like an anonymous function. # means the first argument. #2 can be used for the next argument. &amp; is where the arguments are assigned.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_55.gif" alt="intro-to-mathematica_55.gif" width="123" height="31" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_56.png" alt="intro-to-mathematica_56.png" width="58" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_57.gif" alt="intro-to-mathematica_57.gif" width="119" height="48" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_58.png" alt="intro-to-mathematica_58.png" width="30" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_59.png" alt="intro-to-mathematica_59.png" width="30" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_60.png" alt="intro-to-mathematica_60.png" width="30" height="13" style="vertical-align:middle" />
+</p>
+
+<p>
+ You can find more on this <span><a href="https://reference.wolfram.com/language/ref/Function.html"><span class="HyperlinkInline">here.</span></a></span>
+</p>
+
+
+
+<h2>
+ Import Data
+</h2>
+
+
+
+<p>
+ Many times, you'll get data from a csv or xls. <span style='font-style: italic;'>Mathematica</span> is pretty good figuring out how to interpret the data.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_61.gif" alt="intro-to-mathematica_61.gif" width="267" height="48" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_62.png" alt="intro-to-mathematica_62.png" width="695" height="201" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_63.gif" alt="intro-to-mathematica_63.gif" width="360" height="214" style="vertical-align:middle" />
+</p>
+
+<h2>
+ Overlay data
+</h2>
+
+
+
+<p>
+ Here, I fit the &epsilon; function to the data. I then plot this fit and assign it the name plot1. plot2 is the list plot. By using the Show function, I can overlay these two different plots.
+</p>
+
+
+
+<p class="Input">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_64.gif" alt="intro-to-mathematica_64.gif" width="447" height="65" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_65.png" alt="intro-to-mathematica_65.png" width="225" height="27" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_66.gif" alt="intro-to-mathematica_66.gif" width="360" height="223" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_67.gif" alt="intro-to-mathematica_67.gif" width="360" height="214" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="{{ site.baseurl }}/img/introduction-to-mathematica/intro-to-mathematica_68.gif" alt="intro-to-mathematica_68.gif" width="360" height="223" style="vertical-align:middle" />
+</p>
+
+<h2>
+ Conclusion
+</h2>
+
+
+
+<p>
+ There are a lot of features in <span style='font-style: italic;'>Mathematica</span>. It is better to start using <span style='font-style: italic;'>Mathematica</span> and gradually learn more features. I recommend using the plot and manipulate functions first. Once you get comfortable with this, you can experiment with more features. You can learn more of the features in the online book <span><a href="http://www.wolfram.com/language/elementary-introduction/"><span class="HyperlinkInline">&ldquo;An Elementary Introduction to the Wolfram Language&rdquo;</span></a></span>. Here are some more functions to check out:<br />Integrate<br />Derivative<br />FindPeaks<br />Polygon<br />VectorPlot<br />GraphPlot<br />Histogram<br />N<br />Evaluate<br />Select<br />If you want to see some really good examples, check out the <span><a href="http://demonstrations.wolfram.com/"><span class="HyperlinkInline">demonstrations</span></a></span>.
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>

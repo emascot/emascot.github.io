@@ -34,8 +34,8 @@ $ cd test
 $ vi hello
 ```
 
-Let's make a simple script
-type `i` to go into input mode and input
+Let's make a simple script.
+Type `i` to go into input mode and input.
 
 ```bash
 echo "Hello World"
@@ -53,7 +53,7 @@ $ ls -l
 
 You can see that I used the option `-l`.
 This adds the option to list in long format.
-In long format, it shows rwxr--r-- where rwx stands for read, write, and execute.
+In long format, it shows `rwxr--r--` where rwx stands for read, write, and execute.
 The first three are for the owner, the middle three are users in the group, and the last three are for everyone else.
 Now that the script is executable, let's run it.
 
@@ -213,7 +213,7 @@ First, you should start with a "hash bang" to state what command will run the sc
 ```
 
 $ is how you access variables.
-You can pass arguments which are numbered variables.
+You can access the command line arguments, which are numbered variables.
 
 ```bash
 $1
@@ -274,7 +274,7 @@ do
 done
 ```
 
-If we save this script as "chext" in the $HOME/bin directory we created earlier, we can run `chext txt` in any directory.
+If we save this script as "chext" in the $HOME/bin directory we created earlier, we can run `cpext txt` in any directory.
 This will make a copy of all the files in the current directory with the ".txt" extension.
 
 # Prompt string
